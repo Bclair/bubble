@@ -6,12 +6,12 @@ var scores = [60, 50, 60, 58, 54, 54,
               41, 53, 55, 61, 51, 44];
 
 var output;
-
+var highScore = 0;
 
 for (var i = 0; i<scores.length;i++) {
     output = " bub sol #" + i + " score: " + scores[i];
     console.log(output);
-    if(scores[i]>highScore) {
+    if(scores[i] > highScore) {
         highScore = scores[i];
     }
 }
