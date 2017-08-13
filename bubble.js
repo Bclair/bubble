@@ -11,4 +11,9 @@ var output;
 for (var i = 0; i<scores.length;i++) {
     output = " bub sol #" + i + " score: " + scores[i];
     console.log(output);
+    if(scores[i]>highScore) {
+        highScore = scores[i];
+    }
 }
+console.log("Bubbles tests: " + scores.length);
+console.log("highest bubble score: " + highScore);
